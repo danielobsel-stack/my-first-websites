@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Press Start 2P";
+    src: url("/resources/fonts/PressStart2P-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: "Press Start 2P", monospace;
+    text-align: center;
+    background-color: #7A57D1;
+}
+
+h1 {
+    color: #F5F7FA;
+}
+
+#game-container {
+    display: inline-block;
+    background-color: #50C1E9;  
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    border: 8px solid #F5F7FA;
+    min-width: 550px;
+    box-sizing: border-box;
+    margin: 0px 10px 10px;
+    height: 750px;
+    width: 750px;
+}
+
+#ref {
+    margin: 0;
+    padding-top: 150px;
+    position: relative;
+}
+
+#colsList {
+    margin: 0;
+    padding: 0px;
+    position: absolute;
+    left: 220px;
+    bottom: 23px;
+    display: flex;
+    align-items: flex-end;;
+    height: 150px;
+}
+
+#colsList li {
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 28px;
+    width: 32px;
+    margin: 0 16px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    height: 120px;
+    position: relative;
+}
+
+#colsList li:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #ffffff;
+	border-width: 15px;
+	margin-left: -15px;
+}
+
+#rowsList {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    text-align: right;
+    height: 60px;
+}
+
+#rowsList li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 29px;
+    padding-top: 3px;
+    padding-right: 5px;
+    margin: 16px 0 32px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    position: relative;
+}
+
+#rowsList li:after {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #ffffff;
+	border-width: 15px;
+	margin-top: -15px;
+}
+
+table {
+    border-spacing: 0;
+    padding-left: 220px;
+}
+
+td {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: #5BE7C4;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+}
+
+table.corrected td {
+    border: none;
+}
+
+td.active {
+    background-color: #4bb399;
+    color: #ffffff;
+}
